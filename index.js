@@ -8,7 +8,7 @@ const checkLoto = (firstname, lastname, email, lotoNumbers) => {
   if (!email) {
     return 'Veuillez fournir un email';
   }
-  const emailRegex = /^[a-z0-9._%+-]{8,30}@[a-z0-9.-]+\.[a-z]{2,3}$/; //ici on utilise une expression régulière pour vérifier que l'email est valide en détails sur https://www.w3resource.com/javascript/form/email-validation.php
+  const emailRegex = /^[a-z0-9._%+-]{1,30}@[a-z0-9.-]+\.[a-z]{2,3}$/; //ici on utilise une expression régulière pour vérifier que l'email est valide en détails sur https://www.w3resource.com/javascript/form/email-validation.php
   if (!emailRegex.test(email)) {
     return 'Votre email n\'est pas valide';
   }
